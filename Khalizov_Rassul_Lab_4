@@ -1,4 +1,4 @@
-// Rassul Khalizov
+        // Rassul Khalizov
 //Lab 4
 // 10/1/24
 
@@ -21,27 +21,32 @@ int main() // initiates main
     int i; 
     i = 1;   //reruns the code a number of times until the conditions are no longer met
     while (i <= 5) {
-        cout<<"What is your fruits name?"; 
+        cout<<"What is your fruits name?"; //asks for the name of the fruit 
         cin >> fruit;
 
-        cout<<"How much sugar does your fruit have?";
+        cout<<"How much sugar does your fruit have in grams?"; //asks for the amount of grams of sugar in that fruit
         cin >> fruitSugar;
         if (fruitSugar < 10)
         {
-            cout << fruit <<" is a LOW SUGAR FRUIT";
+            cout << fruit <<" is a LOW SUGAR FRUIT"; // any fruits with less than ten grams of sugar are LOW SUGAR 
         }
+        
+        
         else if (fruitSugar <= 14)
         {
-            cout<< fruit <<" is a MEDIUM SUGAR FRUIT";
+            cout<< fruit <<" is a MEDIUM SUGAR FRUIT"; // any fruits with more than ten grams of sugar are MEDIUM SUGAR 
         }
+        
         
         else if (fruitSugar == 10)
         {
-            cout<< fruit <<" is a MEDIUM SUGAR FRUIT";
+            cout<< fruit <<" is a MEDIUM SUGAR FRUIT"; // any fruits with exactly ten grams of sugar are MEDIUM SUGAR 
         }
+        
+
         else if (fruitSugar > 14)
         {
-            cout<< fruit <<" is a HIGH Sugar Fruit";
+            cout<< fruit <<" is a HIGH Sugar Fruit"; // // any fruits with more than ten grams of sugar are HIGH SUGAR 
         }
         i++;
     } 
